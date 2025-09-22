@@ -347,7 +347,7 @@
     }
 
     .project-search {
-      flex: 1 1 280px;
+      
       min-width: 260px;
       border: 1px solid var(--line);
       border-radius: 999px;
