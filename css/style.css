@@ -174,7 +174,7 @@
 
     .btn.primary {
       background: var(--accent);
-      color: var(--accent-ink);
+      color: whitesmoke;
       box-shadow: 0 10px 30px color-mix(in oklab, var(--accent), black 40%);
     }
 
@@ -347,7 +347,6 @@
     }
 
     .project-search {
-      
       min-width: 260px;
       border: 1px solid var(--line);
       border-radius: 999px;
@@ -708,4 +707,5 @@
       }
     }
 
+    
     

@@ -1,0 +1,10 @@
+<!-- OA Monogram • Outline • passt zum Dark-Theme -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256">
+  <!-- Hintergrundkreis (Onyx) -->
+  <circle cx="128" cy="128" r="122" fill="#0E1116"></circle>
+  <!-- O als Ring (Jade) -->
+  <circle cx="128" cy="128" r="90" fill="none" stroke="#12B3A4" stroke-width="22"></circle>
+  <!-- A (Jade) -->
+  <path d="M90 172 L128 64 L166 172" fill="none" stroke="#12B3A4" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M108 132 H148" fill="none" stroke="#12B3A4" stroke-width="22" stroke-linecap="round"></path>
+</svg>
