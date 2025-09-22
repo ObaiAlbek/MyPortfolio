@@ -333,7 +333,7 @@
       <h2 id="contact-title">Kontakt</h2>
       <p>Schreib mir deine Nachricht</p>
 
-      <form id="contactForm" class="contact-form" action="php/send.php" method="post" novalidate>
+      <form id="contactForm" class="contact-form" action="../php/send.php" method="post" novalidate>
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
@@ -349,8 +349,7 @@
 
         <div id="formAlert" aria-live="polite" style="margin:.25rem 0 0;color:var(--muted)"></div>
 
-        <button class="btn primary" type="submit" id="sendBtn">Nachricht senden</button>
-
+        <input type="submit" class="btn primary" id="sendBtn"name="send" value="Nachricht senden">
         <!-- Honeypot (unsichtbar, am Ende → stört Layout nicht) -->
         <input type="text" name="website" id="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"
                style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">
