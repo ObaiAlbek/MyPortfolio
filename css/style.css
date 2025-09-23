@@ -82,7 +82,7 @@ body.no-scroll { overflow: hidden; }
 }
 .btn-primary { background: #2dd4bf; color: #0f172a; border: none; }
 .btn-primary:hover { background: #22d3ee; transform: translateY(-2px); }
-.btn-primary.small { padding: 0.5rem 1rem; font-size: 0.875rem; flex: 1; }
+.btn-primary.small { padding: 0.5rem 1rem; font-size: 0.875rem; flex: 1; text-align: center; text-decoration: none;}
 .btn-secondary { background: transparent; color: #cbd5e1; border: 1px solid #475569; }
 .btn-secondary:hover { background: #1e293b; color: #ffffff; }
 
