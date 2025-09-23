@@ -2,10 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Obai Albek | Portfolio</title>
 
   <!-- SEO / Basis -->
@@ -35,7 +32,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#12B3A4" />
 
-  <!-- Fonts: schneller laden -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -60,372 +57,527 @@
   </script>
 </head>
 <body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#top" class="logo" aria-label="Startseite" style="text-decoration: none;">
+          <div class="logo-icon">OA</div>
+          <span class="logo-text">Obai Albek</span>
+        </a>
 
-  <!-- Topbar -->
-  <header class="topbar" role="banner">
-    <a class="brand" href="#home" aria-label="Startseite">
-      <span class="brand-mark" aria-hidden="true">OA</span>
-      <span class="brand-text">Obai Albek</span>
-    </a>
+        <!-- Mobile Toggle -->
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="primary-navigation">☰</button>
 
-    <button class="nav-toggle" aria-label="Menü öffnen" aria-controls="mainnav" aria-expanded="false">☰</button>
+        <!-- Navigation -->
+        <nav id="primary-navigation" class="nav-menu" role="navigation" aria-label="Hauptnavigation">
+          <a href="#about" class="nav-link">Über mich</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projekte</a>
+          <a href="#contact" class="nav-link nav-link-cta">Kontakt</a>
+        </nav>
 
-    <nav id="mainnav" class="nav" aria-label="Hauptnavigation">
-      <a class="nav-link" href="#about">Über mich</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#projects">Projekte</a>
-      <a class="nav-link cta" href="#contact">Kontakt</a>
-    </nav>
+        <a href="#contact" class="contact-btn" style="text-decoration: none;">Kontakt</a>
+      </div>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <main id="home" class="hero" role="main">
-    <div class="hero-card" aria-labelledby="intro-title">
-      <div class="hero-media">
-        <!-- Foto möglichst auch als WebP/AVIF erzeugen; Breite/Höhe setzen verhindert CLS -->
-        <img
-          class="hero-photo"
-          src="assets/myPhoto.jpeg"
-          alt="Porträt von Obai Albek – Java Specialist & Full-Stack Developer"
-          width="380" height="380"
-          decoding="async"
-          fetchpriority="high"
-        />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <div class="profile-image-wrapper">
+              <img src="assets/myPhoto.jpeg"
+                   alt="Obai Albek - Java Specialist & Full-Stack Developer"
+                   class="profile-image">
+              <div class="status-indicator">
+                <div class="status-dot"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-text" id="top">
+            <div id="badge" class="badge">Java Specialist & Full-Stack Developer</div>
+            <h1 class="hero-title">Obai Albek</h1>
+            <p class="hero-description">
+              Erfahrener Java Specialist und Full-Stack Developer mit Fokus auf
+              robuste Backend-Lösungen und moderne Webentwicklung.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary" style="text-decoration: none;">Projekte ansehen</a>
+              <a class="btn-secondary" style="text-decoration: none;" href="assets/Lebenslauf_Obai_Albek.pdf" target="_blank" rel="noopener" download>CV herunterladen</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="hero-copy">
-        <p class="kicker">Hi, ich bin</p>
-        <h1 id="intro-title" class="title">Obai Albek</h1>
-        <p class="subtitle">
-          Java Specialist & Full-Stack Developer<br />
-          Creating robust software solutions with modern technologies
-        </p>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Über mich</h2>
 
-        <div class="actions">
-          <a class="btn primary" href="assets/Lebenslauf_Obai_Albek.pdf" target="_blank" rel="noopener" download>
-            <span aria-hidden="true">📋</span> Lebenslauf ansehen
-          </a>
-          <a class="btn ghost" href="#contact">
-            <span aria-hidden="true">📧</span> Kontakt aufnehmen
-          </a>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-paragraph">
+              Als erfahrener Java Specialist und Full-Stack Developer bringe ich
+              eine starke Kombination aus Backend-Expertise und Frontend-Kenntnissen mit.
+              Ich studiere Informatik an der TH Mannheim und baue saubere, wartbare Software.
+              In Java fühle ich mich zu Hause (OOP, Collections, Streams). Im Web arbeite ich full-stack mit HTML/CSS/JS und PHP (+SQL).
+            </p>
+            <p class="about-paragraph">
+              Ich glaube daran, dass großartige Software nicht nur funktional,
+              sondern auch wartbar und erweiterbar sein sollte. Mein Ansatz
+              kombiniert bewährte Architekturdienste mit modernen Technologien,
+              um Lösungen zu entwickeln, die sowohl Geschäftsziele als auch
+              Benutzeranforderungen erfüllen.
+            </p>
+          </div>
+
+          <div class="about-services">
+            <ul class="services-list">
+              <li class="service-item">
+                <div class="service-dot"></div>
+                <span>Fokus: Java-Backend & Web-Apps</span>
+              </li>
+              <li class="service-item">
+                <div class="service-dot"></div>
+                <span>Interesse: Datenstrukturen & Algorithmen mit Visualisierungen</span>
+              </li>
+              <li class="service-item">
+                <div class="service-dot"></div>
+                <span>Frontend-Entwicklung mit React & TypeScript</span>
+              </li>
+              <li class="service-item">
+                <div class="service-dot"></div>
+                <span>Team-Prozesse: Scrum, saubere Git-Workflows, Tests</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" class="section-title">Technische Kompetenzen</h2>
+
+        <div class="skill-grid">
+          <article class="skill">
+            <h3>Programmiersprachen</h3>
+            <p><strong>Java, C++:</strong> Sehr gute Kenntnisse (OOP, Multithreading, JUnit, Algorithmen)</p>
+            <p><strong>Go:</strong> Gute Kenntnisse (Nebenläufigkeit mit Goroutines, praktische Projekterfahrung)</p>
+            <p><strong>Haskell:</strong> Gute Kenntnisse (funktionale Programmierung, Studienprojekte)</p>
+          </article>
+
+          <article class="skill">
+            <h3>Webentwicklung</h3>
+            <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, jQuery</p>
+            <p><strong>Backend:</strong> PHP, JSON/XML (API-Integration & Datenserialisierung)</p>
+          </article>
+
+          <article class="skill">
+            <h3>Embedded Systems</h3>
+            <p>Entwicklung mit Mikrocontrollern (Arduino)</p>
+            <p>Ansteuerung von Hardware (Sensoren, Servomotoren)</p>
+            <p>Grundlagen der Elektro- und Digitaltechnik</p>
+          </article>
+
+          <article class="skill">
+            <h3>Netzwerke & Systemadministration</h3>
+            <p><strong>Netzwerkgrundlagen:</strong> TCP/IP, DHCP, DNS</p>
+            <p><strong>Linux/Unix-Systeme:</strong> Administration, Shell-Scripting</p>
+            <p><strong>Serverdienste:</strong> SSH, Web-Server Einrichtung</p>
+            <p><strong>Virtualisierung:</strong> Virtual Machines</p>
+          </article>
+
+          <article class="skill">
+            <h3>Datenbanken</h3>
+            <p>SQL (MySQL/MariaDB), JPA/Hibernate, DB-Design & -Optimierung</p>
+          </article>
+
+          <article class="skill">
+            <h3>Tools & DevOps</h3>
+            <p><strong>Versionskontrolle:</strong> Git (Branches, Merges, Commits)</p>
+            <p><strong>Containerisierung:</strong> Docker</p>
+            <p><strong>Betriebssysteme:</strong> Linux, Windows</p>
+          </article>
+
+          <article class="skill">
+            <h3>Software-Engineering</h3>
+            <p>UML-Diagramme, Anforderungsanalyse, Architektur, agile Methoden, Testautomatisierung, Parallelisierung</p>
+          </article>
+
+          <article class="skill">
+            <h3>Sonstige Kenntnisse</h3>
+            <p>Microsoft Office</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="projects-header">
+          <h2 class="section-title center">Projekte</h2>
+          <p class="projects-description">
+            Eine Auswahl meiner Projekte, die meine Fähigkeiten in Java-Entwicklung,
+            Web-Technologien und Software-Engineering demonstrieren.
+          </p>
         </div>
 
-        <!-- Social -->
-        <ul class="social" aria-label="Social Links">
-          <li>
-            <a class="iconlink" href="https://github.com/ObaiAlbek" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.24 1.83 1.24 1.07 1.84 2.8 1.31 3.48 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.48-1.34-5.48-5.98 0-1.32.47-2.39 1.24-3.24-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.64.24 2.86.12 3.16.77.85 1.23 1.92 1.23 3.24 0 4.65-2.81 5.67-5.49 5.97.43.37.81 1.1.81 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="iconlink" href="https://www.linkedin.com/in/obai-albek-85365a357" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M20.45 20.45h-3.55v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7H9.32V9h3.41v1.56h.05c.47-.89 1.63-1.83 3.35-1.83 3.58 0 4.24 2.36 4.24 5.43v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.57 20.45h3.55V9H3.57v11.45Z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/chat.jpg" alt="Local Chat App - Java Socket Programming">
+              <div class="project-type">Desktop App</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Local Chat Application</h3>
+              <p class="project-description">
+                Lokaler Chat mit Benutzerverwaltung, Chatrooms und Server/Client-Architektur.
+                Implementiert mit sauberer Schichtentrennung (Domain, GUI, Fassade) und Unit-Tests.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Socket Programming</span>
+                <span class="project-tag">Maven</span>
+                <span class="project-tag">JUnit</span>
+                <span class="project-tag">GUI</span>
+              </div>
+              <div class="project-buttons">
+                <button class="btn-primary small">Projekt ansehen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/Bibliothek.jpg" alt="Bibliotheksverwaltungssystem - Java MVC">
+              <div class="project-type">Desktop App</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Bibliotheksverwaltungssystem</h3>
+              <p class="project-description">
+                Vollständiges Verwaltungssystem für Medien mit Ausleihe, Rückgabe
+                und automatischer Gebührenberechnung nach MVC-Architektur.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">MVC</span>
+                <span class="project-tag">JUnit</span>
+                <span class="project-tag">OOP</span>
+              </div>
+              <div class="project-buttons">
+                <button class="btn-primary small">Projekt ansehen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/Flughafen.jpg" alt="Flughafensimulation - Go Concurrency">
+              <div class="project-type">Desktop App</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Flughafensimulation</h3>
+              <p class="project-description">
+                Simulation von Flughafenprozessen wie Gepäckabfertigung und Boarding
+                mit Goroutines und Channels für nebenläufige Abläufe.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Go</span>
+                <span class="project-tag">Concurrency</span>
+                <span class="project-tag">Simulation</span>
+              </div>
+              <div class="project-buttons">
+                <button class="btn-primary small">Projekt ansehen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/Lernplattform.jpg" alt="Lernplattform - Web Development">
+              <div class="project-type">Webseite</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Lernplattform für HTML/CSS</h3>
+              <p class="project-description">
+                Responsive Lernplattform zur Vermittlung von Webtechnologien mit
+                Nutzerregistrierung, Login-System und MySQL-Datenbankanbindung.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-buttons">
+                <button class="btn-primary small">Projekt ansehen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/oldGames.jpg" alt="Java Spiele - GUI Entwicklung">
+              <div class="project-type">Games</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Java Spiele Collection</h3>
+              <p class="project-description">
+                Sammlung klassischer Spiele wie Tic-Tac-Toe, Pong und Hitori
+                mit Java-GUI und sauberem objektorientiertem Design.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">GUI</span>
+                <span class="project-tag">Spieleentwicklung</span>
+                <span class="project-tag">OOP</span>
+              </div>
+              <div class="project-buttons">
+                <button class="btn-primary small">Projekt ansehen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/Transport.jpg" alt="Urlaub Transport App - UI/UX Design">
+              <div class="project-type">UI/UX Design</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Urlaub-Transport-App Design</h3>
+              <p class="project-description">
+                App-Design für Transportbuchungen im Urlaub mit Fokus auf
+                Usability, User Flows und moderner Benutzeroberfläche.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">UI/UX</span>
+                <span class="project-tag">User Flows</span>
+                <span class="project-tag">Wireframing</span>
+              </div>
+              <div class="project-buttons">
+                <button class="btn-primary small">Design ansehen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-footer">
+          <a class="btn-secondary" style="text-decoration: none;" href="https://github.com/ObaiAlbek" target="_blank">
+            Weitere Projekte auf GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-bg">
+        <div class="bg-gradient"></div>
+        <div class="bg-radial-1"></div>
+        <div class="bg-radial-2"></div>
+      </div>
+
+      <div class="container">
+        <div class="contact-header">
+          <h2 class="section-title center gradient-text">Lassen Sie uns zusammenarbeiten</h2>
+          <p class="contact-subtitle">
+            Haben Sie ein spannendes Projekt im Kopf? Ich freue mich darauf,
+            gemeinsam innovative Lösungen zu entwickeln.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="contact-info-title">Kontaktinformationen</h3>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>E-Mail</h4>
+                  <p>obay.albeek@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Telefon</h4>
+                  <p>+49 1783740356</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Standort</h4>
+                  <p>Mannheim, Deutschland</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>Folgen Sie mir</h4>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/obai-albek-85365a357" target="_blank" class="social-icon" aria-label="LinkedIn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/ObaiAlbek" class="social-icon" target="_blank" aria-label="GitHub">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <div class="contact-form-bg"></div>
+            <div class="contact-form-gradient"></div>
+
+            <div class="contact-form">
+              <h3>Nachricht senden</h3>
+
+              <form action="php/send.php" method="post" accept-charset="UTF-8" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName">Vorname</label>
+                    <input type="text" id="firstName" placeholder="Max" name="firstName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Nachname</label>
+                    <input type="text" id="lastName" placeholder="Mustermann" name="lastName" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-Mail</label>
+                  <input type="email" id="email" placeholder="max@example.com" name="email" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Betreff</label>
+                  <input type="text" id="subject" placeholder="Projektanfrage" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Nachricht</label>
+                  <textarea id="message" placeholder="Erzählen Sie mir von Ihrem Projekt..." name="message" required></textarea>
+                </div>
+
+                <input type="submit" class="submit-btn" name="send" value="Nachricht senden">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>© <span id="year"></span> Obai Albek · Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <!-- About -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>Über mich</h2>
-      <p>
-        Ich studiere Informatik an der TH Mannheim und baue saubere, wartbare Software.
-        In Java fühle ich mich zu Hause (OOP, Collections, Streams). Im Web arbeite ich
-        full-stack mit HTML/CSS/JS und PHP (+SQL).
-      </p>
-      <ul class="highlights">
-        <li>Fokus: Java-Backend & Web-Apps</li>
-        <li>Interesse: Datenstrukturen & Algorithmen mit Visualisierungen</li>
-        <li>Team-Prozesse: Scrum, saubere Git-Workflows, Tests</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section skills" aria-labelledby="skills-title">
-    <div class="container">
-      <h2 id="skills-title">Technische Kompetenzen</h2>
-
-      <div class="skill-grid">
-        <article class="skill">
-          <h3>Programmiersprachen</h3>
-          <p><strong>Java, C++:</strong> Sehr gute Kenntnisse (OOP, Multithreading, JUnit, Algorithmen)</p>
-          <p><strong>Go:</strong> Gute Kenntnisse (Nebenläufigkeit mit Goroutines, praktische Projekterfahrung)</p>
-          <p><strong>Haskell:</strong> Gute Kenntnisse (funktionale Programmierung, Studienprojekte)</p>
-        </article>
-
-        <article class="skill">
-          <h3>Webentwicklung</h3>
-          <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, jQuery</p>
-          <p><strong>Backend:</strong> PHP, JSON/XML (API-Integration & Datenserialisierung)</p>
-        </article>
-
-        <article class="skill">
-          <h3>Embedded Systems</h3>
-          <p>Entwicklung mit Mikrocontrollern (Arduino)</p>
-          <p>Ansteuerung von Hardware (Sensoren, Servomotoren)</p>
-          <p>Grundlagen der Elektro- und Digitaltechnik</p>
-        </article>
-
-        <article class="skill">
-          <h3>Netzwerke & Systemadministration</h3>
-          <p><strong>Netzwerkgrundlagen:</strong> TCP/IP, DHCP, DNS</p>
-          <p><strong>Linux/Unix-Systeme:</strong> Administration, Shell-Scripting</p>
-          <p><strong>Serverdienste:</strong> SSH, Web-Server Einrichtung</p>
-          <p><strong>Virtualisierung:</strong> Virtual Machines</p>
-        </article>
-
-        <article class="skill">
-          <h3>Datenbanken</h3>
-          <p>SQL (MySQL/MariaDB), JPA/Hibernate, DB-Design & -Optimierung</p>
-        </article>
-
-        <article class="skill">
-          <h3>Tools & DevOps</h3>
-          <p><strong>Versionskontrolle:</strong> Git (Branches, Merges, Commits)</p>
-          <p><strong>Containerisierung:</strong> Docker</p>
-          <p><strong>Betriebssysteme:</strong> Linux, Windows</p>
-        </article>
-
-        <article class="skill">
-          <h3>Software-Engineering</h3>
-          <p>UML-Diagramme, Anforderungsanalyse, Architektur, agile Methoden, Testautomatisierung, Parallelisierung</p>
-        </article>
-
-        <article class="skill">
-          <h3>Sonstige Kenntnisse</h3>
-          <p>Microsoft Office</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projekte -->
-  <section id="projects" class="section projects" aria-labelledby="projects-title">
-    <div class="container">
-      <h2 id="projects-title">Projekte <span id="projectCount" class="count"></span></h2>
-
-      <!-- Filter & Suche -->
-      <div class="project-controls" role="region" aria-label="Projektfilter">
-        <input id="projectSearch" class="project-search" type="search"
-               placeholder="Suche nach Titel/Technologie …" aria-label="Projekte durchsuchen" />
-        <div class="filter-chips" role="group" aria-label="Technologie-Filter">
-          <button class="chip is-active" data-filter="all">Alle</button>
-          <button class="chip" data-filter="Java">Java</button>
-          <button class="chip" data-filter="Web">Web</button>
-          <button class="chip" data-filter="Go">Go</button>
-          <button class="chip" data-filter="UI/UX">UI/UX</button>
-        </div>
-      </div>
-
-      <div class="project-list">
-        <!-- (deine Karten – unverändert) -->
-        <!-- Local Chat -->
-        <article class="project-card" data-tags="Java,OOP,Maven,JUnit,GUI,Facade,Networking,Sockets,Domain">
-          <div class="project-meta">
-            <h3>Local Chat (Java, Maven, JUnit)</h3>
-            <p class="meta">GUI · Domain/Fassade · ChatServer (Sockets)</p>
-          </div>
-          <p>Lokaler Chat ohne DB: Benutzer/IDs, ChatRoom, Server/Client-Sockets, Unit-Tests, saubere Schichten (Domain, GUI, Fassade).</p>
-          <ul class="tags"><li>Java</li><li>Maven</li><li>JUnit</li><li>GUI</li><li>Fassade</li><li>Sockets</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/MyLocalchat" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- Bibliotheksverwaltung -->
-        <article class="project-card" data-tags="Java,OOP,JDBC,JPA,MVC,CLI,GUI">
-          <div class="project-meta">
-            <h3>Bibliotheksverwaltung (Java)</h3>
-            <p class="meta">OOP · JDBC/JPA · MVC</p>
-          </div>
-          <p>Ausleihe/Retouren, Gebühren, Admin-Zahlungen, Katalog.</p>
-          <ul class="tags"><li>Java</li><li>MVC</li><li>JPA</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/Bibliotheksverwaltungssystem" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- Parkhaus -->
-        <article class="project-card" data-tags="Java,MVC,Simulation">
-          <div class="project-meta">
-            <h3>Parkhaussimulator (Java)</h3>
-            <p class="meta">MVC · Gebühren · Nummernschilder</p>
-          </div>
-          <p>Ein/Ausfahrt, Zeitstempel, E-Auto-Rabatt, Abrechnung.</p>
-          <ul class="tags"><li>Java</li><li>Simulation</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/Parkhaus" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- E-Mail Client -->
-        <article class="project-card" data-tags="Java,GUI,MVC">
-          <div class="project-meta">
-            <h3>E-Mail Client (Java, GUI, MVC)</h3>
-            <p class="meta">GUI · MVC</p>
-          </div>
-          <p>GUI-basierte Mail-App mit sauberer Schichtentrennung.</p>
-          <ul class="tags"><li>Java</li><li>GUI</li><li>MVC</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/SimpleMailSystem" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- Flughafensimulation -->
-        <article class="project-card" data-tags="Go,Concurrency,Channels,Goroutines">
-          <div class="project-meta">
-            <h3>Flughafensimulation (Go)</h3>
-            <p class="meta">Goroutines · Channels</p>
-          </div>
-          <p>Modellierung von Abfertigung/Security/Gates mit Concurrency-Mustern.</p>
-          <ul class="tags"><li>Go</li><li>Concurrency</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/Flughafensimulation" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- Lernplattform -->
-        <article class="project-card" data-tags="Web,HTML,CSS,JavaScript,PHP,SQL,Auth">
-          <div class="project-meta">
-            <h3>Lernplattform (Full-Stack)</h3>
-            <p class="meta">HTML/CSS/JS · PHP · MySQL</p>
-          </div>
-          <p>Login, Kurse, Quiz, responsives Design.</p>
-          <ul class="tags"><li>Web</li><li>PHP</li><li>MySQL</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- UI/UX -->
-        <article class="project-card" data-tags="UI/UX,Figma,Design">
-          <div class="project-meta">
-            <h3>Urlaub-Transport-App (UI/UX)</h3>
-            <p class="meta">Figma · User Flows</p>
-          </div>
-          <p>App-Design für Transportbuchungen, Fokus auf Usability.</p>
-          <ul class="tags"><li>UI/UX</li><li>Figma</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/Urlaub-Transport-App" target="_blank" rel="noopener">Mockups</a>
-          </div>
-        </article>
-
-        <!-- Spiele -->
-        <article class="project-card" data-tags="Java,GUI,Games">
-          <div class="project-meta">
-            <h3>Spiele (Java GUI)</h3>
-            <p class="meta">Tic-Tac-Toe · Pong · Hitori</p>
-          </div>
-          <p>Kleine Spiele mit Java-GUI und sauberem OOP-Design.</p>
-          <ul class="tags"><li>Java</li><li>GUI</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/MyHitori-Spiel" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- React Auth -->
-        <article class="project-card" data-tags="Web,React,JavaScript,Auth">
-          <div class="project-meta">
-            <h3>React Auth Form</h3>
-            <p class="meta">React · useState · Conditional Rendering</p>
-          </div>
-          <p>Login/Signup-Formular mit Validation und CSS.</p>
-          <ul class="tags"><li>Web</li><li>React</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/reactAuthForm" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- Parallel -->
-        <article class="project-card" data-tags="Java,Threads,Locks,Concurrency">
-          <div class="project-meta">
-            <h3>Parallelprogrammierung (Java)</h3>
-            <p class="meta">Dining Philosophers · ThreadsafeSimplifiedList&lt;T&gt;</p>
-          </div>
-          <p>Concurrency mit Threads/Locks und Hand-over-Hand-Locking.</p>
-          <ul class="tags"><li>Java</li><li>Concurrency</li></ul>
-          <div class="project-actions">
-            <a class="btn small" href="https://github.com/ObaiAlbek/concurrency-dining-philosophers" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Kontakt -->
-  <section id="contact" class="section contact" aria-labelledby="contact-title">
-    <div class="container">
-      <h2 id="contact-title">Kontakt</h2>
-      <p>Schreib mir deine Nachricht</p>
-
-      <form id="contactForm" class="contact-form" action="php/send.php" method="post" accept-charset="UTF-8" novalidate>
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required />
-        </div>
-        <div class="field">
-          <label for="email">E-Mail</label>
-          <input id="email" name="email" type="email" autocomplete="email" required />
-        </div>
-        <div class="field">
-          <label for="msg">Nachricht</label>
-          <textarea id="msg" name="message" rows="5" required></textarea>
-        </div>
-
-        <!-- Meldungen -->
-        <div id="formAlert" aria-live="polite" style="margin:.25rem 0 0;color:var(--muted)"></div>
-
-        <!-- WICHTIG: Button (kein input), damit contact.js Text ändern kann -->
-        <button class="btn primary" type="submit" id="sendBtn" name="send">Nachricht senden</button>
-
-        <!-- Honeypot -->
-        <input type="text" name="website" id="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"
-               style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" />
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>© <span id="year"></span> Obai Albek · Alle Rechte vorbehalten.</p>
-    </div>
-  </footer>
-
+  <script src="js/contact.js" defer></script>
   <script>
-    // Jahr im Footer
+    // Jahr
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile Navigation Toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    if (navToggle && nav) {
-      navToggle.addEventListener('click', () => {
-        const open = nav.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', String(open));
-        navToggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
-        navToggle.textContent = open ? '✕' : '☰';
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
       });
-      // Menü schließen nach Klick
-      document.querySelectorAll('.nav-link').forEach(a =>
-        a.addEventListener('click', () => {
-          nav.classList.remove('active');
-          navToggle.setAttribute('aria-expanded', 'false');
-          navToggle.setAttribute('aria-label', 'Menü öffnen');
-          navToggle.textContent = '☰';
-        })
-      );
+    });
+
+    // Header background on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // --- Mobile Navigation Toggle (FIXED) ---
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu'); // FIX: statt '.nav'
+    const pageBody = document.body;
+
+    function openNav() {
+      navMenu.classList.add('active');
+      navToggle.setAttribute('aria-expanded', 'true');
+      navToggle.setAttribute('aria-label', 'Menü schließen');
+      navToggle.textContent = '✕';
+      pageBody.classList.add('no-scroll');
     }
 
-    // Active-Nav per IntersectionObserver (nice UX)
-    const sections = document.querySelectorAll('main, section.section');
+    function closeNav() {
+      navMenu.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Menü öffnen');
+      navToggle.textContent = '☰';
+      pageBody.classList.remove('no-scroll');
+    }
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.contains('active');
+        if (isOpen) {
+          closeNav();
+        } else {
+          openNav();
+        }
+      });
+
+      // Links im Menü schließen das Menü wieder
+      document.querySelectorAll('.nav-menu .nav-link').forEach(a => {
+        a.addEventListener('click', () => closeNav());
+      });
+
+      // ESC zum Schließen
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+          closeNav();
+        }
+      });
+    }
+
+    // Active-Nav via IntersectionObserver
+    const sections = document.querySelectorAll('section[id]');
     const links = [...document.querySelectorAll('.nav-link')];
     const byHash = h => links.find(a => a.getAttribute('href') === h);
 
@@ -441,9 +593,14 @@
     }, {rootMargin: '-40% 0px -50% 0px', threshold: 0.01});
 
     sections.forEach(s => s.id && io.observe(s));
+
+    // Projekt-Buttons (Demo)
+    document.querySelectorAll('.btn-primary.small').forEach(button => {
+      button.addEventListener('click', function() {
+        const projectTitle = this.closest('.project-card').querySelector('.project-title').textContent;
+        alert(`Projekt "${projectTitle}" wird angezeigt - diese Funktion kann später mit echten Links implementiert werden.`);
+      });
+    });
   </script>
-
-  <!-- Formular-Handler (deine Datei) -->
-
 </body>
 </html>
