@@ -18,7 +18,7 @@ Hier präsentiere ich meine wichtigsten Projekte, meine Skills und mein Figma-ba
 ## 🎨 Design (Figma)
 
 Das Design wurde zuerst in **Figma** entworfen und anschließend mit HTML, CSS und JavaScript umgesetzt.  
-👉 [Zum Figma-Prototyp](https://www.figma.com/make/964sPiOq1JgW7FXTUWrQLW/Replicate-Photo-Design?fullscreen=1)
+👉 [Zum Figma-Prototyp](https://www.figma.com/design/KjondNid4xp9H6DuqmF6eE/myportofolio?node-id=0-1&t=wSfrLHi9uITrBJVK-1)
 
 **Design-Richtlinien aus Figma übernommen:**
 - 🎨 Farben als CSS-Variablen (`--primary`, `--secondary`)  
